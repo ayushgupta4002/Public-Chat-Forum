@@ -1,0 +1,101 @@
+.chat{
+    flex: 0.7;
+    display: flex;
+    flex-direction:column ;
+}
+.header_chats{
+    display: flex;
+    padding: 20px;
+    padding-bottom:8px;
+    padding-top: 6px ;
+    align-items: center;
+    background-color: #192734;
+    border-bottom: 1px solid rgb(19, 79, 99) ;
+    
+}
+.body_chats{
+    flex:1;
+    
+    background-image: url("https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/Desktop.png");
+    background-repeat:repeat;
+    background-position: center;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.Name{
+
+    padding-left: 15px;
+    display: flex;
+    
+    color: aliceblue;
+}
+.headerchats_left{
+    display: flex;
+  
+ 
+}
+
+.iconsright{
+    display: flex;
+    margin-left: 46vw;
+    color: azure;
+}
+.chat_message{
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width:fit-content;
+    margin-bottom: 30px;
+
+}
+.chat_name{
+    color: azure;
+    font-weight: 650;
+    font-size: xx-small;
+    position: absolute;
+    top: -15px ;
+
+}
+.chat_user{
+    margin-left: auto;
+    background-color: #dcf8c6; ;
+}
+
+.time{
+    margin-left: 10px;
+    font-size: xx-small;
+
+}
+.footer_chats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+
+    border-top: 1px solid rgb(56, 56, 206);
+    background-color: #15202b ;
+}
+.footer_chats>form{
+    display: flex;
+    flex: 1;
+    border-top: #dcf8c6;
+    margin-right: 1%;
+
+}
+.footer_chats>form>input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 33px;
+}
+.footer_chats> .MuiSvgIcon-root{
+    padding: 10px;
+    color: grey;
+}
+.footer_chats>form>button{
+    padding: 10px;
+    border-radius: 40%;
+    margin-left: 1%;
+}

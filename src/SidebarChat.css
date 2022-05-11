@@ -1,0 +1,26 @@
+
+.chats{
+
+display: flex;
+align-items: center;
+padding: 7px;
+cursor:pointer;
+color: antiquewhite;
+border-bottom: 1px solid rgb(4, 66, 87);
+}
+
+.chats:hover{
+    background-color: rgb(47, 73, 122);
+    
+}
+.icon > .MuiSvgIcon-root{
+    font-size: 34px ;
+    color: gray;
+    
+}
+.icon {
+    margin-right: 15px;
+}
+.sidechatcontent{
+    color: antiquewhite;
+}
