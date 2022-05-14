@@ -35,6 +35,7 @@ React.useEffect(() => {
  var profilepic=user.photoURL;
 
 
+
   return (
     <div className="Sidebar">
       <div className="Header">
@@ -42,8 +43,7 @@ React.useEffect(() => {
        
 
         <div className="SidebarRight">
-          <DonutLargeIcon />
-          <ChatIcon />
+          
           <MoreVertIcon />
 
         </div>

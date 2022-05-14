@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Login from './Login';
 import { useStateValue } from './StateProvider';
 import {actionTypes} from './reducer';
+import Navbar from './Navbar';
 
 
 function App() {
@@ -18,14 +19,24 @@ function App() {
 
 
   return (
+<div>
+    <div className="navbar">
+    <Navbar/>
+  
+    </div>
+
     <div className="App">
       {!user ? (
        <Login/>
       ) : (
+    
+       
         <div className="AppBox">
+
           <Router>
 
             <Routes>
+               
 
               <Route path="/rooms/:roomId" element={<><Sidebar /><Chatsarea /></>} />
               <Route path="/" element={<><Sidebar /><Chatsarea /></>} />
@@ -33,12 +44,13 @@ function App() {
             </Routes>
 
           </Router>
+          </div>
         
 
 
 
 
-        </div>
+       
         
 
 
@@ -49,6 +61,7 @@ function App() {
       
 
      
+    </div>
     </div>
   );
 }

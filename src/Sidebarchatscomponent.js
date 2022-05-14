@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import "./SidebarChat.css"
 import Avatar from '@mui/material/Avatar';
@@ -8,8 +8,18 @@ import { Link } from 'react-router-dom';
 
 
 function Sidebarchatscomponent({ id, name, addNewChat }) {
+  const [messages,setMessages]=useState("");
 
   /////////////
+  React.useEffect(() =>{
+    if(id) {
+        db.collection("rooms").doc(id).collection('messages')
+        .orderBy("timestamp", 'desc')
+        .onSnapshot((snapshot) => (
+            setMessages(snapshot.docs.map((doc) => doc.data()))
+        ));
+    }
+}, [id]);
 
   const [seed, setseed] = React.useState('');
   React.useEffect(() => {
@@ -36,7 +46,7 @@ function Sidebarchatscomponent({ id, name, addNewChat }) {
 
       <div className="sidechatcontent">
         <h3>{name}</h3>
-        <p>Last message...</p>
+        <p>{messages[0]?.message}</p>
       </div>
     </div>
     </Link>

@@ -6,23 +6,40 @@
   display: grid;
   place-items:center ;
   background-image: url("https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/Desktop.png");
-  height: 100vh;
+  height: 112vh;
+  z-index: 1;
 
 }
+.navbar{
+  background-color: rgb(4,29,84);
+  height: 14vh;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
 .AppBox{
   display: flex;
-  height: 90vh;
+  height: 85vh;
   width: 90vw;
  
-  margin-top: 22px;
-  background-color: #ededed;
+  margin-top: 5px;
+  background-image: url("https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/Desktop.png") ;
+
+  
   box-shadow: 0px 0px 14px 3px rgba(49,232,183,1);
+  
 }
 
 .ayush{
+  margin-top: -5vh;
   color: white;
 }
 .ayushlink{
   color: azure;
+
 
 }
